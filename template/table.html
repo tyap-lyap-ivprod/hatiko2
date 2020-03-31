@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Запись к врачу</title>
+	<link rel="stylesheet" type="text/css" href="/static/st1.css">
+</head>
+<body>
+	<div style="overflow: auto;">
+	<table border="1" width="100%" cellpadding="5">
+	<tbody>
+		<tr>
+		%for i in config['colums']:
+			<th>{{config['colums'][i]['title']}}</th>
+		%end
+		</tr>
+		%for i in bas:
+			%fl = 0
+			<tr>
+			%for j in struct:
+				<th>
+				%for j1 in range(j):
+					{{ i[fl] }}
+					%fl += 1
+				%end
+				</th>
+					
+			%end
+			</tr>
+		%end
+	</tbody>
+	</table>
+	</div>
+</body>
+</html>
+

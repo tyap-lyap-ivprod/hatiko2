@@ -1,0 +1,31 @@
+{
+	"colums":{
+		"fiob":{
+			"title":"Full name",
+			"include":[
+				"fio"
+			]
+		},
+		
+		"phone":{
+			"title":"Mobile phone",
+			"include":[
+				"phone"
+			]	
+		},
+
+		"service":{
+			"title":"Service",
+			"include":[
+				"service"
+			]	
+		},
+
+		"symptoms":{
+			"title":"Symptoms",
+			"include":[
+				"symptoms"
+			]
+		}
+	}
+}
